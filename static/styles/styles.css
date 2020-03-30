@@ -1,0 +1,9 @@
+.thumb-image{
+	display: inline-block;
+}
+.thumb-image:hover{
+	transform: scale(2);
+}
+.thumb-button{
+	background-color: transparent;
+}
