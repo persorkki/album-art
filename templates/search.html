@@ -6,11 +6,12 @@
   <meta name="viewport"
      content="width=device-width, initial-scale=1, user-scalable=yes">
 </head>
+
 <body>
-	{% for thumb, big in imgs.items() %}
+	{% for k, v in imgs.items() %}
 		<div class="thumb-image">
-			<a href={{big}} class="thumb-button">
-			<img src={{ thumb }}>
+			<a href={{ v[0] }} class="thumb-button" title={{ k }}>
+			<img src={{ v[1] }}>
 			</a>
 		</div>
 	{% endfor %}

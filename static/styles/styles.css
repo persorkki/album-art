@@ -2,7 +2,7 @@
 	display: inline-block;
 }
 .thumb-image:hover{
-	transform: scale(2);
+	transform: scale(1.75);
 }
 .thumb-button{
 	background-color: transparent;
