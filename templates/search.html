@@ -10,8 +10,8 @@
 <body>
 	{% for k, v in imgs.items() %}
 		<div class="thumb-image">
-			<a href={{ v[0] }} class="thumb-button" title={{ k }}>
-			<img src={{ v[1] }}>
+			<a href="{{ v[0] }}"" class="thumb-button" title="{{ v[2] }}">
+			<img src="{{ v[1] }}"">
 			</a>
 		</div>
 	{% endfor %}
