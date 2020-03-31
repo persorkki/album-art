@@ -2,8 +2,6 @@ from flask import Flask, render_template, request
 import albumart_loader
 app = Flask(__name__)
 
-query = "Vincent Laguardia Gambini Sings Just for You"
-
 @app.route("/")
 @app.route("/index")
 def index():
