@@ -10,11 +10,16 @@ def index():
 @app.route("/search", methods=['GET'])
 def search():
 	data = request.args
+	if 'sel' in data:
+		country = data['sel']
+	else:
+		country = "us"
+		
 	if 'query' in data:
 		query = data['query']
 	else:
 		query = 'Vincent Laguardia Gambini Sings Just for You'
-	return render_template('search.html', imgs = albumart_loader.get_urls(query))
+	return render_template('search.html', imgs = albumart_loader.get_urls(query, country))
 
 if __name__ == '__main__':
 	app.run()

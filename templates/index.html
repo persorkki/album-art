@@ -5,10 +5,16 @@
   <meta name="viewport"
      content="width=device-width, initial-scale=1, user-scalable=yes">
 </head>
-<body>
-<div>
-	<form action="/search">
+<body style="margin: 0 auto;">
+<div style="margin: 0 auto; margin-top: 100px; width: 610px;">
+	<img src="/static/banner.png" style="text-align: center;">
+	<h2 style="text-align: center;">Album Search</h2>
+	<form action="/search" style="text-align: center;">
 	<input type="text" name="query">
+	<select id="selecta" name="sel">
+		<option value="fi">Finland</option>
+		<option value="us">US</option>
+	</select>
 	<input type="submit" id="inp" value="search">
 	</form>
 </div>
